@@ -13,7 +13,7 @@
 #include "motores.h"
 #include "sensores.h"
 
-
+/*
 void setup() {
   M1Setup();
   M1Speed(VELOCIDADA);
@@ -37,3 +37,4 @@ void loop() {
   }
  
 }
+*/
