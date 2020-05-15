@@ -9,47 +9,68 @@
 #define TIMES 4
 
 
-void robotForward(int duracion){
+void robotForwardIntant(){
+  //de modo que todos los motores se moveran hacia adelante  
   M1Forward();
   M2Forward();
-  //de modo que todos los motores se moveran hacia adelante
+}
+
+void robotForward(int duracion){
+
+  robotForwardIntant();
   delay (duracion);
  
 }
 
-void robotRight(int duracion){
+void robotRightInstant(){
   M1Forward();
   M2Backward();
+}
+
+void robotRight(int duracion){
+  robotRightInstant();
   delay (duracion);
+}
+
+void robotLeftInstant(){
+  M2Forward();
+  M1Backward();
 }
 
 void robotLeft(int duracion){
-  M2Forward();
-  M1Backward();
+  robotLeftInstant();
   delay (duracion);
 }
 
-
-
-void robotBackward(int duracion){
+void robotBackwardInstant(){
   M1Backward();
   M2Backward();
+}
+
+void robotBackward(int duracion){
   //lo que indica que ahora todos los motores se moverán hacia atrás
+  robotBackwardInstant();
   delay (duracion);
 }
 
-
-
-void robotSmoothstop(int duracion){
+void robotSmoothstopInstant(){
   M1SmoothStop();
   M2SmoothStop();  
+}
+
+void robotSmoothstop(int duracion){
   //de este modo todos los motores se apagaran progresivamente
+  robotBackwardInstant();
   delay (duracion);
+}
+
+void robotBrakeInstant(){
+  M1Brake();
+  M2Brake();
 }
 
 void robotBrake(int duracion){
-  M1Brake();
-  M2Brake();
+  robotBrakeInstant();
   //de manera que todos los mostores quedarán repentinamente parados y bloqueados
   delay (duracion);
 }
