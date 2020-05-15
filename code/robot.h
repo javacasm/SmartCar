@@ -3,7 +3,7 @@
 #define VELOCIDADA 200
 #define VELOCIDADB 200
 
-
+void robotSetSpeed(int speed);
 void robotForwardInstant();
 void robotForward(int duracion);
 void robotLeftInstant();
