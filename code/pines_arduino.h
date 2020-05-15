@@ -1,8 +1,8 @@
 // define IO pin
 
-#define RightLineSensor 10
+#define RightLineSensor 2
 #define MediumLineSensor 4
-#define LeftLineSensor 2
+#define LeftLineSensor 10
 
 #define ServoUltrasonido 3
 
