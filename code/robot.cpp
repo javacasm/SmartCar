@@ -9,7 +9,12 @@
 #define TIMES 4
 
 
-void robotForwardIntant(){
+void robotSetSpeed(int speed){
+  M1Speed(speed);
+  M2Speed(speed);
+}
+
+void robotForwardInstant(){
   //de modo que todos los motores se moveran hacia adelante  
   M1Forward();
   M2Forward();
@@ -17,14 +22,14 @@ void robotForwardIntant(){
 
 void robotForward(int duracion){
 
-  robotForwardIntant();
+  robotForwardInstant();
   delay (duracion);
  
 }
 
 void robotRightInstant(){
-  M1Forward();
-  M2Backward();
+  M2Forward();
+  M1Backward();
 }
 
 void robotRight(int duracion){
@@ -33,8 +38,8 @@ void robotRight(int duracion){
 }
 
 void robotLeftInstant(){
-  M2Forward();
-  M1Backward();
+  M1Forward();
+  M2Backward();
 }
 
 void robotLeft(int duracion){
