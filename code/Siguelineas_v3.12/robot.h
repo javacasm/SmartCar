@@ -1,5 +1,7 @@
 #include "pines_arduino.h"
 
+#define CONFUSSION 200
+
 #define VELOCIDADA 200
 #define VELOCIDADB 200
 
