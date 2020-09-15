@@ -29,7 +29,7 @@ void setup() {//comienza el setup o parte de la programación en la que específ
 
  Serial.begin(9600);//iniciamos el SERIAL PORT a 9600 baudios para poder analizar lo que sucede durante la ejecución del programa
 
- showSerialCommand();
+ //showSerialCommand();
  
  
 }//fin setup
