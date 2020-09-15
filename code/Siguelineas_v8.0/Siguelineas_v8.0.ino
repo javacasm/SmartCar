@@ -144,6 +144,14 @@ void checkSerialCommand(){
        case '\r': // Caracter de retorno de carro (se manda desde el IDE de Arduino)
        case '\n': // Caracter de fin de l'inea 
           break;
+       /* TODO:   
+        *  S -> servo 180
+        *  c -> servo 90
+        *  s -> servo 0
+        *  u -> medida ultrasonidos y envio del dato a display 7 segmentos: Leccion 14 del kit Mega
+        *  L -> modo siguelineas
+        *  q -> sale del modo siguelineas
+        */
        default:
           Serial.println(String("Comand not found: ") + char(incomingByte));
           break;
