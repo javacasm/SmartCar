@@ -11,3 +11,15 @@
 ![](./images/wireconnect.png)
 
 [Código](./code/)
+
+## Depuración usando pantall de 4 dígitos de 7 segmentos
+
+Seguimos el esquema de conexión del kit de elegoo (Part 3 - Lesson 5)
+
+![](./images/595+7-segment.png)
+
+![](./images/7-segmentoMontaje.jpg)
+
+![](./images/7-segmentoMontaje2.jpg)
+
+![](./images/7-segmentoMontaje3.jpg)
