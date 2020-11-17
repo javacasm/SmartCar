@@ -1,9 +1,9 @@
 //www.elegoo.com
 //2016.12.12
 
-int latch = A2;   //74HC595  pin 9  latch (STCP)
-int clock = A3;   //74HC595  pin 10 clock (SHCP)
-int data  = A1;   //74HC595  pin 8  data (DS)
+int latch = 9;   //74HC595  pin 9  latch (STCP)
+int clock = 10;   //74HC595  pin 10 clock (SHCP)
+int data  = 8;   //74HC595  pin 8  data (DS)
 
 
 // ![pinout 74595 ShiftRegister ](./images/ShiftRegisterPinOut.jpg)
