@@ -1,8 +1,3 @@
-// Pines a los que se asocian los dígitos:
-#define UNIDADES 0
-#define DECENAS 13
-#define CENTENAS 1
-
 //velocidad de los 4 motores
 #define FAST 200
 #define MEDIUM 150
