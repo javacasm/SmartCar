@@ -14,8 +14,6 @@ void setup() {
 
   detect_IR();
 
-  
-
   robotSetSpeed(MEDIUM);
   //termina configuración
 
