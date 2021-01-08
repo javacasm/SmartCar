@@ -1,5 +1,10 @@
 #include <Arduino.h>//carpeta imprescindible para saber cuales son los pines. NUNCA OLVIDAR
 
+// Pines a los que se asocian los dígitos:
+#define UNIDADES 0
+#define DECENAS 13
+#define CENTENAS 1
+
 #define DATA  A1//74HC595  pin A1  data (DS)
 #define LATCH A2//74HC595  pin A2  latch (STCP)
 #define CLOCK A3//74HC595  pin A1 clock (SHCP)
