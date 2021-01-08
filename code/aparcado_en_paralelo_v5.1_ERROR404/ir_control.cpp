@@ -52,36 +52,29 @@ void detect_IR(){
         
         // Parada
         case STOP: 
-        case UNKNOWN_STOP: Serial.println ("BRAKE");robotBrakeInstant (); Display(COD_BLANK);   break;
+        case UNKNOWN_STOP:        Serial.println ("BRAKE");robotBrakeInstant (); Display(COD_BLANK);   break;
         
         // Control de velocidad
-        case KEY1:         Serial.println ("SLOW");   speed = SLOW;     Display(COD_1);   break;
-        case KEY2:         Serial.println ("MEDIUM"); speed = MEDIUM;   Display(COD_5);   break;
-        case KEY3:         Serial.println ("FAST");   speed = FAST;     Display(COD_9);   break;
+        case KEY1:                Serial.println ("SLOW");   speed = SLOW;     Display(COD_1);   break;
+        case KEY2:                Serial.println ("MEDIUM"); speed = MEDIUM;   Display(COD_5);   break;
+        case KEY3:                Serial.println ("FAST");   speed = FAST;     Display(COD_9);   break;
         
         // Control de servo
-        case KEY4:         Serial.println ("SERVO LEFT");      setServo(SERVO_LEFT);      Display(COD_L);   break;
-        case KEY5:         Serial.println ("SERVO CENTRAL");   setServo(SERVO_CENTRAL);   Display(COD_C);   break;        
-        case KEY6:         Serial.println ("SERVO RIGHT");     setServo(SERVO_RIGHT);     Display(COD_R);   break;
+        case KEY4:                Serial.println ("SERVO LEFT");      setServo(SERVO_LEFT);      Display(COD_L);   break;
+        case KEY5:                Serial.println ("SERVO CENTRAL");   setServo(SERVO_CENTRAL);   Display(COD_C);   break;        
+        case KEY6:                Serial.println ("SERVO RIGHT");     setServo(SERVO_RIGHT);     Display(COD_R);   break;
 
         // Sale del modo IR
         case KEY_STAR: 
-          bDetectIR = false;   
-          Serial.println("EXIT IN .. 3");  
-          Display(COD_3);    delay(500);
-          Serial.println("EXIT IN .. 2");  
-          Display(COD_2);    delay(500);
-          Serial.println("EXIT IN .. 1");  
-          Display(COD_1);    delay(500);
-          Serial.println("EXIT IN .. 0");  
-          Display(COD_BLANK);delay(500);
+          bDetectIR = false;      Serial.println("EXIT IN .. 3");  
+          Display(COD_3);         Serial.println("EXIT IN .. 2");    delay(500);
+          Display(COD_2);         Serial.println("EXIT IN .. 1");    delay(500);
+          Display(COD_1);         Serial.println("EXIT IN .. 0");    delay(500);
+          Display(COD_BLANK);     Serial.println("EXITING");         delay(500);
           break;
         
         default:
-        codigo404 = ircode;
-        Serial.print ("ERROR 404 ");
-        Serial.println (ircode); 
-        break;
+        codigo404 = ircode;       Serial.print ("ERROR 404 ");   Serial.println (ircode);      break;
       }
     }
     else {
